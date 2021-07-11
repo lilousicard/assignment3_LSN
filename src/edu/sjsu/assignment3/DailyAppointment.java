@@ -3,7 +3,9 @@ package edu.sjsu.assignment3;
 import java.time.LocalDate;
 
 public class DailyAppointment extends Appointment{
-    DailyAppointment(String description, LocalDate startDate, LocalDate endDate) {
+
+
+    public DailyAppointment(String description, LocalDate startDate, LocalDate endDate) {
         super(description, startDate, endDate);
     }
 

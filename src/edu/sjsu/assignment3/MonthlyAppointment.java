@@ -3,7 +3,8 @@ package edu.sjsu.assignment3;
 import java.time.LocalDate;
 
 public class MonthlyAppointment extends Appointment{
-    MonthlyAppointment(String description, LocalDate startDate, LocalDate endDate) {
+
+    public MonthlyAppointment(String description, LocalDate startDate, LocalDate endDate) {
         super(description, startDate, endDate);
     }
 
@@ -18,11 +19,7 @@ public class MonthlyAppointment extends Appointment{
     public boolean occursOn(LocalDate date) {
         if (this.isBetween(date))
         {
-            if (this.getStartDate().getDayOfMonth() == date.getDayOfMonth())
-            {
-                return true;
-            }
-            return false;
+            return this.getStartDate().getDayOfMonth() == date.getDayOfMonth();
         }
         return false;
     }

@@ -4,7 +4,8 @@ import java.time.LocalDate;
 
 public class OnetimeAppointment extends Appointment{
 
-    OnetimeAppointment(String description, LocalDate startDate) {
+     public OnetimeAppointment(String description, LocalDate startDate) {
+
         super(description, startDate, startDate);
     }
 
