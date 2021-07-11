@@ -15,7 +15,7 @@ class AppointmentTest {
 
     @Test
     void occursOnBasic() {
-        Appointment a = new Appointment("", null, null);
+
         //assertFalse(a.occursOn(null));
     }
 

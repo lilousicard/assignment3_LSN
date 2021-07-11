@@ -2,7 +2,7 @@ package edu.sjsu.assignment3;
 
 import java.time.LocalDate;
 
-public class Appointment implements Comparable<Appointment> {
+public abstract class Appointment implements Comparable<Appointment> {
 
     private String description;
     private LocalDate startDate;
